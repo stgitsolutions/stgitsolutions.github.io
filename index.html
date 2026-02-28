@@ -463,6 +463,33 @@ footer { background: #050814; padding: 60px 5% 20px; border-top: 1px solid rgba(
     .hamburger { display: block; }
     h1 { font-size: 2.5rem; }
 }
+    body.light-mode {
+    --bg-dark: #f8fafc;
+    --bg-card: #ffffff;
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --accent: #0891b2;
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --glass: rgba(255,255,255,0.7);
+}
+    body {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card, .lead-card, .contact-wrapper, header, footer {
+    transition: all 0.3s ease;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: white;
+}
+
+body.light-mode .theme-toggle {
+    color: #0f172a;
+}
 </style>
 </head>
 <body>
@@ -470,8 +497,20 @@ footer { background: #050814; padding: 60px 5% 20px; border-top: 1px solid rgba(
 <!-- Header -->
 <header>
     <div class="logo">STG <span>IT Solutions</span></div>
-    <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-    <a href="#contact" class="nav-cta"><i class="fas fa-phone-alt"></i> Get Quote</a>
+
+    <div style="display:flex; align-items:center; gap:20px;">
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon" id="themeIcon"></i>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <a href="#contact" class="nav-cta">
+            <i class="fas fa-phone-alt"></i> Get Quote
+        </a>
+    </div>
 </header>
 
 <!-- Mobile Menu -->
@@ -785,5 +824,35 @@ footer { background: #050814; padding: 60px 5% 20px; border-top: 1px solid rgba(
         </div>
     </div>
 </footer>
+    <script>
+function toggleTheme() {
+    const body = document.body;
+    const icon = document.getElementById("themeIcon");
+
+    body.classList.toggle("light-mode");
+
+    if (body.classList.contains("light-mode")) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+        localStorage.setItem("theme", "light");
+    } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+        localStorage.setItem("theme", "dark");
+    }
+}
+
+// Load saved theme
+window.onload = function () {
+    const savedTheme = localStorage.getItem("theme");
+    const icon = document.getElementById("themeIcon");
+
+    if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    }
+}
+</script>
 </body>
 </html>
