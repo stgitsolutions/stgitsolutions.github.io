@@ -14,16 +14,20 @@
 
 <style>
 :root {
-    --bg-dark: #0B1121;
+    --bg-main: #0B1121;
+    --bg-section: #0f172a;
     --bg-card: #1e293b;
+    --bg-footer: #050814;
+
     --primary: #3b82f6;
     --primary-hover: #2563eb;
     --accent: #06b6d4;
+
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
+
     --glass: rgba(30, 41, 59, 0.7);
 }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Inter', sans-serif; background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
@@ -463,14 +467,19 @@ footer { background: #050814; padding: 60px 5% 20px; border-top: 1px solid rgba(
     .hamburger { display: block; }
     h1 { font-size: 2.5rem; }
 }
-    body.light-mode {
-    --bg-dark: #f8fafc;
+ body.light-mode {
+    --bg-main: #f8fafc;
+    --bg-section: #e2e8f0;
     --bg-card: #ffffff;
+    --bg-footer: #e2e8f0;
+
     --primary: #2563eb;
     --primary-hover: #1d4ed8;
     --accent: #0891b2;
+
     --text-main: #0f172a;
     --text-muted: #475569;
+
     --glass: rgba(255,255,255,0.7);
 }
     body {
