@@ -1,176 +1,247 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Shree Technologies Global IT Solutions Pune</title>
+<title>Shree Technologies Global IT Solutions | AI & Automation Company Pune</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Poppins',sans-serif;background:#0f172a;color:white;overflow-x:hidden;}
+body{font-family:'Inter',sans-serif;background:#0b1120;color:white;overflow-x:hidden;}
+
+section{padding:90px 20px;}
+.container{max-width:1200px;margin:auto;}
 
 .hero{
 height:100vh;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
-text-align:center;
-background:linear-gradient(135deg,#0f172a,#1e293b,#0ea5e9);
+background:linear-gradient(135deg,#0b1120,#111827,#0ea5e9);
 background-size:400% 400%;
-animation:gradientBG 10s ease infinite;
-padding:20px;
+animation:gradient 12s ease infinite;
 }
 
-@keyframes gradientBG{
+@keyframes gradient{
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
 }
 
+.hero-content{
+max-width:700px;
+}
+
 .hero h1{
-font-size:42px;
-font-weight:700;
-margin-bottom:15px;
+font-size:48px;
+font-weight:800;
+line-height:1.2;
+margin-bottom:20px;
 }
 
 .hero p{
 font-size:18px;
-margin-bottom:25px;
-opacity:0.9;
+opacity:0.85;
+margin-bottom:30px;
 }
 
 .btn{
-padding:14px 30px;
+padding:14px 28px;
 background:#22c55e;
 border-radius:30px;
 text-decoration:none;
 color:white;
 font-weight:600;
 transition:0.3s;
-box-shadow:0 10px 20px rgba(0,0,0,0.3);
 }
 
 .btn:hover{
-transform:translateY(-3px);
 background:#16a34a;
-}
-
-.section{
-padding:80px 20px;
-text-align:center;
-background:#111827;
-}
-
-.section h2{
-font-size:32px;
-margin-bottom:40px;
+transform:translateY(-3px);
 }
 
 .services{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
+margin-top:50px;
 }
 
 .card{
-background:#1f2937;
-padding:30px;
-width:280px;
+background:#111827;
+padding:35px;
 border-radius:15px;
 transition:0.4s;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
+border:1px solid rgba(255,255,255,0.05);
 }
 
 .card:hover{
-transform:translateY(-10px);
-background:#0ea5e9;
+transform:translateY(-8px);
+border:1px solid #0ea5e9;
 }
 
 .card h3{
-margin-bottom:10px;
+margin-bottom:15px;
 font-size:20px;
 }
 
 .card p{
 font-size:14px;
-opacity:0.85;
+opacity:0.8;
+}
+
+.section-title{
+text-align:center;
+font-size:34px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.section-sub{
+text-align:center;
+opacity:0.7;
+margin-bottom:40px;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:40px;
+color:#0ea5e9;
+}
+
+.cta{
+background:#0ea5e9;
+text-align:center;
+padding:70px 20px;
+}
+
+.cta h2{
+font-size:32px;
+margin-bottom:20px;
 }
 
 .footer{
-padding:20px;
+background:#050816;
+padding:30px;
 text-align:center;
-background:#0f172a;
 font-size:14px;
+opacity:0.7;
 }
 
-.whatsapp-float{
+.whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:25px;
+right:25px;
 background:#25D366;
-color:white;
 padding:15px 18px;
 border-radius:50%;
-font-size:22px;
+color:white;
 text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
+font-size:20px;
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
 }
 
 @media(max-width:768px){
-.hero h1{font-size:30px;}
+.hero h1{font-size:32px;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-<h1>Shree Technologies Global IT Solutions</h1>
-<p>Website Development • Digital Marketing • Automation • AI Solutions</p>
-<a class="btn" href="https://wa.me/91YOURNUMBER">Get Free Consultation</a>
+<!-- HERO SECTION -->
+<section class="hero">
+<div class="container hero-content">
+<h1>Transforming Businesses with AI, Automation & Digital Innovation</h1>
+<p>Enterprise-grade websites, intelligent automation systems, AI voice bots and custom software solutions built for scalable growth.</p>
+<a class="btn" href="https://wa.me/91YOURNUMBER">Book Free Strategy Call</a>
 </div>
+</section>
 
-<div class="section">
-<h2>Our Premium Services</h2>
+<!-- SERVICES SECTION -->
+<section>
+<div class="container">
+<h2 class="section-title">Our Core Services</h2>
+<p class="section-sub">Complete digital transformation under one roof</p>
 
 <div class="services">
 
 <div class="card">
 <h3>Website Development</h3>
-<p>High-performance business websites & eCommerce platforms.</p>
+<p>High-performance corporate websites & eCommerce platforms built for speed, SEO and conversion.</p>
 </div>
 
 <div class="card">
 <h3>Digital Marketing</h3>
-<p>Google Ads, SEO & scalable lead generation systems.</p>
+<p>Performance marketing, Google Ads & advanced SEO strategies to generate measurable leads.</p>
 </div>
 
 <div class="card">
 <h3>WhatsApp Bot Automation</h3>
-<p>Automated lead capture & smart appointment booking.</p>
+<p>Intelligent chat automation, appointment booking and lead qualification systems.</p>
 </div>
 
 <div class="card">
 <h3>AI Voice Bot Automation</h3>
-<p>Smart call answering & IVR automation solutions.</p>
+<p>Smart IVR, automated call handling and AI-based conversational systems.</p>
 </div>
 
 <div class="card">
 <h3>Custom Software Development</h3>
-<p>CRM, ERP & enterprise automation systems.</p>
+<p>CRM, ERP, hospital management systems and enterprise-level automation tools.</p>
 </div>
 
 </div>
 </div>
+</section>
 
-<a class="whatsapp-float" href="https://wa.me/91YOURNUMBER">💬</a>
+<!-- WHY CHOOSE US -->
+<section style="background:#0f172a;">
+<div class="container">
+<h2 class="section-title">Why Choose Shree Technologies?</h2>
 
+<div class="stats">
+<div class="stat">
+<h2>100+</h2>
+<p>Projects Delivered</p>
+</div>
+
+<div class="stat">
+<h2>5+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Technical Support</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta">
+<h2>Ready to Automate & Scale Your Business?</h2>
+<a class="btn" href="https://wa.me/91YOURNUMBER">Get Started Today</a>
+</section>
+
+<!-- FOOTER -->
 <div class="footer">
-© 2026 Shree Technologies Global IT Solutions Pune
+© 2026 Shree Technologies Global IT Solutions Pune | AI & Automation Company
 </div>
+
+<a class="whatsapp" href="https://wa.me/91YOURNUMBER">💬</a>
 
 </body>
 </html>
