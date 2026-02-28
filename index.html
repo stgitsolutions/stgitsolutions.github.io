@@ -52,7 +52,32 @@ body.light-mode {
     --border-color: rgba(0,0,0,0.08);
     --glass: rgba(255,255,255,0.7);
 }
+/* ===============================
+   FORM SPACING FIX
+=================================*/
 
+.lead-card h3,
+.contact-form-container h3 {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
 /* =====================================================
    GLOBAL RESET
 ===================================================== */
