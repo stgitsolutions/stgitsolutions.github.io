@@ -37,6 +37,16 @@ line-height:1.7;
     object-fit: contain;
     border-radius: 50%;
 }
+    .logo img {
+    max-height: 70px;   /* controls height */
+    width: auto;        /* keeps aspect ratio */
+    display: block;
+}
+    @media (max-width: 768px) {
+    .logo img {
+        max-height: 45px;
+    }
+}
 .floating-buttons {
   position: fixed;
   bottom: 20px;
