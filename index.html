@@ -95,7 +95,19 @@ padding:40px;
 border-radius:20px;
 border:1px solid rgba(255,255,255,.1);
 }
-
+.floating-buttons a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
 input,select{
 width:100%;
 padding:14px;
@@ -306,10 +318,12 @@ Whether you need long-term organic growth through SEO or instant leads via Googl
 <footer>
 © 2026 STG IT Solutions | Digital Marketing Agency in Pune
 </footer>
-
-<a href="https://wa.me/919890964512" class="whatsapp-float">
+<div class="floating-buttons">
+  <a href="https://wa.me/919890964512" class="whatsapp-btn">
   <img src="https://shreem12.github.io/assets/images/whatsapp.png">
 </a>
+</div>
+
 
 <script>
 function sendWhatsApp(e){
