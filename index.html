@@ -13,8 +13,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<!-- Standard favicon -->
+</noscript><!-- Standard favicon -->
 
 <!-- Apple Touch Icon for iPhone/iPad -->
 
@@ -94,10 +96,10 @@ z-index:1000;
 .logo span{color:var(--primary);}
 
 .hero{
-min-height:100vh;
+min-height:auto;
 display:flex;
 align-items:center;
-padding-top:120px;
+padding:140px 6% 80px;
 background:
 radial-gradient(circle at top right, rgba(59,130,246,.25), transparent 40%),
 radial-gradient(circle at bottom left, rgba(6,182,212,.2), transparent 40%);
@@ -218,7 +220,7 @@ box-shadow:0 10px 30px rgba(0,0,0,.4);
 
 <header>
 <div class="logo">
-    <img src="logo.webp">
+   <img src="logo.webp" loading="eager" alt="STG IT Solutions Logo">
 </div>
 <a href="#contact" class="btn">Get Free Quote</a>
 </header>
@@ -352,7 +354,7 @@ Whether you need long-term organic growth through SEO or instant leads via Googl
 </footer>
 <div class="floating-buttons">
   <a href="https://wa.me/919890964512" class="whatsapp-btn">
-  <img src="https://shreem12.github.io/assets/images/whatsapp.png">
+ <img src="https://shreem12.github.io/assets/images/whatsapp.png" loading="lazy" alt="WhatsApp Chat">
 </a>
 </div>
 
