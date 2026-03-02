@@ -209,7 +209,17 @@ border-radius:50%;
 font-size:1.5rem;
 box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
-
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border: 0;
+}
 @media(max-width:900px){
 .hero-grid{grid-template-columns:1fr;text-align:center;}
 .hero h1{font-size:2.2rem;}
@@ -246,9 +256,15 @@ We combine performance marketing with intelligent automation to help clinics, ho
 <div class="glass" id="contact">
 <h3>Get Free Consultation</h3>
 <form onsubmit="sendWhatsApp(event)">
-<input type="text" id="name" placeholder="Your Name" required>
-<input type="tel" id="phone" placeholder="Mobile Number" required>
-<select id="service">
+    
+<label for="name" class="visually-hidden">Your Name</label>
+<input type="text" id="name" name="name" placeholder="Your Name" required>
+
+<label for="phone" class="visually-hidden">Mobile Number</label>
+<input type="tel" id="phone" name="phone" placeholder="Mobile Number" required>
+
+<label for="service" class="visually-hidden">Select Service</label>
+<select id="service" name="service">
 <option>SEO Services</option>
 <option>Google Ads</option>
 <option>AI WhatsApp Bot</option>
@@ -256,6 +272,7 @@ We combine performance marketing with intelligent automation to help clinics, ho
 <option>AI Voice Bot</option>
 <option>Custom Software Development</option>
 </select>
+
 <button type="submit">Send on WhatsApp</button>
 </form>
 </div>
